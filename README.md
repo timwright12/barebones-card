@@ -1,5 +1,7 @@
 # Barebones UI Card
 
+Offering CSS scaffolding for three card styles: standard, horizontal, and hero with the same HTML. Optimized for accessibility. #a11y
+
 [![Build Status][cli-img]][cli-url]
 
 ### Installation
@@ -7,6 +9,13 @@
 ```bash
 npm install @barebones/card --save
 ```
+
+### Demos
+[Standard Card](https://timwright12.github.io/barebones-card/demo/card.html)
+
+[Horizontal Card](https://timwright12.github.io/barebones-card/demo/card-horizontal.html)
+
+[Hero](https://timwright12.github.io/barebones-card/demo/card-hero.html)
 
 ### CSS
 
