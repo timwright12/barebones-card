@@ -1,0 +1,6 @@
+:root {
+
+	/* Breakpoints */
+	@custom-media ---card-bp-small ( min-width: 43.75em ); /* 700px */
+
+}

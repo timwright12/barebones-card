@@ -1,0 +1,92 @@
+.card * {
+    box-sizing: border-box;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card__media,
+.card__media img {
+    display: block;
+    width: 100%;
+}
+
+.card__column {
+    order: 1;
+    margin-bottom: 1em;
+}
+
+.card__heading > a:after {
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.card__body {
+  position: relative;
+  z-index: 2;
+}
+
+.card__column--media {
+    order: 0;
+    position: relative;
+}
+
+/*
+    Horizontal Card
+*/
+
+.card--horizontal .card__column {
+    flex: 0 0 50%;
+    min-width: 50%;
+    margin-bottom: 0;
+}
+
+@media (min-width: 700px) {
+    .card--horizontal .card__column + .card__column {
+        padding-right: 1em;
+    }
+
+    .card--horizontal {
+        flex-direction: row;
+    }
+}
+
+/*
+    Hero Card
+*/
+
+.card--hero {
+    position: relative;
+}
+
+.card--hero .card__column {
+    margin-bottom: 0;
+}
+
+.card--hero .card + .card {
+    padding-left: 0;
+}
+
+.card--hero .card__heading > a:after {
+    display: none;
+}
+
+@media (min-width: 700px) {
+    .card--hero .card__column--content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+}

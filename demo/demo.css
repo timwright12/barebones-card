@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    max-width: 1200px;
+}
+
+.flex {
+    display: flex;
+	flex-direction: column;
+}
+
+@media (min-width: 700px) {
+
+	.flex {
+		flex-direction: row;
+	}
+
+	.card + .card {
+	    padding-left: 1em;
+	}
+
+}

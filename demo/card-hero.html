@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8" />
+
+        <title>Demo: @barebones/card</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="demo.css" />
+        <link rel="stylesheet" href="../dist/index.css" />
+    </head>
+    <body>
+
+        <div class="container">
+        <div class="card card--hero">
+            <div class="card__column card__column--content">
+                <h1 class="card__heading">
+                    <a href="#!heading">
+                        Suspendisse auctor turpis vel
+                    </a>
+                </h1>
+
+                <div class="card__body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Mauris gravida varius orci sit amet gravida. Nunc quis
+                        felis sed est vulputate vestibulum et vitae ante.
+                        Vestibulum a leo orci. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Mauris gravida varius orci
+                        sit amet gravida gravida gravida.
+                    </p>
+                </div><!--/.card__body-->
+
+            </div>
+            <div class="card__column card__column--media">
+				<picture class="card__media">
+					<source srcset="http://placehold.it/1600x900" media="(min-width: 700px)">
+					<img src="http://placehold.it/800x450" alt="Placeholder image"/>
+				</picture>
+            </div>
+        </div>
+    </div>
+
+    </body>
+</html>
